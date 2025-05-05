@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="game3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+</head>
+<body>
+  <h1>🎧 Guess The Sound 🎧</h1>
+  <button id="playButton">Play Now</button>
+
+  <div class="game" id="gameArea" style="display: none;">
+    <div id="roundInfo"></div>
+    <audio id="audioPlayer" controls></audio>
+    <br/>
+    <input type="text" id="userGuess" placeholder="Enter sound name..." />
+    <br/>
+    <button onclick="checkAnswer()">Submit</button>
+    <div id="timer">Time Left: 10s</div>
+    <div class="result" id="resultText"></div>
+  </div>
+
+  <script src="script3.js"></script>
+
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1>Game Zone</h1>
+    </div>
+    <div class="container">
+        <div class="game-box">Guess the Song from Lyrics <button data-game="lyrics">Play Now</button></div>
+        <div class="game-box">Identify Song from Audio <button data-game="audio">Play Now</button></div>
+        <div class="game-box">Who’s the Artist? <button data-game="artist">Play Now</button></div>
+        <div class="game-box">Guess the Song from Description <button data-game="description">Play Now</button></div>
+    </div>
+    <script>
+        document.querySelectorAll("button[data-game]").forEach(button => {
+          button.addEventListener("click", () => {
+            const gameType = button.getAttribute("data-game");
+            switch (gameType) {
+              case "lyrics":
+                window.location.href = "./game1/lyrics-game.html";
+                break;
+              case "audio":
+                window.location.href = "./game2/audio-game.html";
+                break;
+              case "artist":
+                window.location.href = "./game3/artist-game.html";
+                break;
+              case "description":
+                window.location.href = "./game4/description-game.html";
+                break;
+              default:
+                alert("Game not available!");
+            }
+          });
+        });
+      </script>
+</body>
+</html>

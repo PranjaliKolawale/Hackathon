@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="game4.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>🎵 Guess The Song</h1>
+  <button id="startButton">Start Game</button>
+
+  <div id="gameSection" style="display: none;">
+    <div id="roundInfo"></div>
+    <p id="descriptionText"></p>
+    <input type="text" id="guessInput" placeholder="Enter song name..." />
+    <br/>
+    <button onclick="checkSongAnswer()">Submit</button>
+    <div id="timer">Time Left: 10s</div>
+    <div class="result" id="resultDisplay"></div>
+  </div>
+
+  <script src="script4.js"></script>
+    
+</body>
+</html>

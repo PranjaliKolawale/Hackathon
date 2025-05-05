@@ -1,0 +1,13 @@
+[
+    { "title": "Barking", "audio": "../../audio/barking.mp3" },
+    { "title": "Battery", "audio": "../../audio/battery.mp3" },
+    { "title": "Bird", "audio": "../../audio/bird.mp3" },
+    { "title": "Bubble", "audio": "../../audio/bubble.mp3" },
+    { "title": "Chick", "audio": "../../audio/chick.mp3" },
+    { "title": "Metal", "audio": "../../audio/metal.mp3" },
+    { "title": "Minion", "audio": "../../audio/minion.mp3" },
+    { "title": "Notification", "audio": "../../audio/notification.mp3" },
+    { "title": "Rain", "audio": "../../audio/rain.mp3" },
+    { "title": "Shine", "audio": "../../audio/shine.mp3" }
+  ]
+  
